@@ -1,9 +1,10 @@
 import './App.css';
+import HomePage from './components/HomePage';
 
 function App() {
   return (
-    <div className="App">
-      <div> Welcome to AACT!</div>
+    <div className="App container">
+      <HomePage/>
     </div>
   );
 }
