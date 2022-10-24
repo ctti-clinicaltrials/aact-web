@@ -14,45 +14,45 @@ export default function ConnectPage() {
         configuring it to use PostgreSQL, and providing AACT connection
         credentials.
       </p>
-      <div class="row row-cols-1 row-cols-md-2 g-4">
-        <div class="col-sm-4">
-          <div class="card h-100 bg-light">
-            <div class="card-body">
-              <h4 class="card-title">pgAdmin</h4>
-              <p class="card-text">
+      <div className="row row-cols-1 row-cols-md-2 g-4">
+        <div className="col-sm-4">
+          <div className="card h-100 bg-light">
+            <div className="card-body">
+              <h4 className="card-title">pgAdmin</h4>
+              <p className="card-text">
                 Click here for instructions on how to use a standard graphical
                 user interface to query the cloud-based AACT directly with SQL.
               </p>
             </div>
           </div>
         </div>
-        <div class="col-sm-4">
-          <div class="card h-100 bg-light">
-            <div class="card-body">
-              <h4 class="card-title">R and RStudio</h4>
-              <p class="card-text">
+        <div className="col-sm-4">
+          <div className="card h-100 bg-light">
+            <div className="card-body">
+              <h4 className="card-title">R and RStudio</h4>
+              <p className="card-text">
                 Click here for instructions about how to use R/RStudio to
                 analyze the AACT data directly.
               </p>
             </div>
           </div>
         </div>
-        <div class="col-sm-4">
-          <div class="card h-100 bg-light">
-            <div class="card-body">
-              <h4 class="card-title">SAS</h4>
-              <p class="card-text">
+        <div className="col-sm-4">
+          <div className="card h-100 bg-light">
+            <div className="card-body">
+              <h4 className="card-title">SAS</h4>
+              <p className="card-text">
                 Click here for instructions about how to use SAS to analyze the
                 AACT data directly.
               </p>
             </div>
           </div>
         </div>
-        <div class="col-sm-4">
-          <div class="card h-100 bg-light">
-            <div class="card-body">
-              <h4 class="card-title">pSQL</h4>
-              <p class="card-text">
+        <div className="col-sm-4">
+          <div className="card h-100 bg-light">
+            <div className="card-body">
+              <h4 className="card-title">pSQL</h4>
+              <p className="card-text">
                 Click here to receive instructions on how to use the command
                 line PostgreSQL tool to query the cloud-based AACT directly with
                 SQL.
