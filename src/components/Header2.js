@@ -4,7 +4,7 @@ import image from "../images/full_logo.jpg";
 
 export default function Header2() {
   return (
-    <nav className="navbar sticky-top">
+    <nav className="navbar sticky-top bg-white">
         <div className="container-fluid">
           <a
             className="navbar-brand"
