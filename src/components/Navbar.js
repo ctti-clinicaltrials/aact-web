@@ -1,7 +1,7 @@
 import React from "react";
 import image from "../images/full_logo.jpg";
 
-export default function Header2() {
+export default function Navbar() {
   return (
     <nav className="navbar sticky-top bg-white">
       <div className="container-fluid">
@@ -51,7 +51,6 @@ export default function Header2() {
                   Download
                 </a>
               </li>
-              {/* <hr class="d-none d-md-block my-2"></hr> */}
               <li>
                 <div className="nav-item" id="learnAccordion">
                   <div className="accordion-item">
@@ -104,7 +103,6 @@ export default function Header2() {
                   </div>
                 </div>
               </li>
-              {/* <hr class="d-none d-md-block my-2"></hr> */}
               <li className="nav-item">
                 <a className="nav-link" href="shared_data">
                   Shared Data
