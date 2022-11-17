@@ -1,0 +1,50 @@
+/*
+main colors from aact-admin
+
+$primary:               #008aa1;
+$secondary:             #02b7d4;
+$tertiary:              #26657a;
+$accent:                #ec3e37;
+
+$red:                   #b71417;
+$maroon:                #680001;
+$turquoise:             #26657a; */
+
+h1, h2, h3 {
+color: #26657a ;
+}
+
+
+.bg-tertiary {
+    background-color: #26657a !important;
+}
+.bg-primary {
+    background-color: #02a1bb !important;
+}
+
+.h-20{
+    height: 10rem !important;
+}
+
+.t-white{
+    color: #FFF !important;
+}
+
+.t-grey{
+    color:#57585c !important;
+}
+
+.info_shade_dark{
+    background-color: #26657a;
+    border-color: #26657a;
+}
+
+.card:hover {
+    opacity: 1.1 !important;
+    transition: opacity 0.5s ease !important;
+}
+
+.card{
+    opacity: 0.8 !important;
+}
+  
