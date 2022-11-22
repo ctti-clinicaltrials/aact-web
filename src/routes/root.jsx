@@ -11,7 +11,7 @@ export default function Root() {
   return (
     <div>
       <Header2/>
-      <div className='container'>
+      <div className='d-flex flex-column min-vh-100 container'>
       <Outlet/>
       </div>
       <Footer/>
