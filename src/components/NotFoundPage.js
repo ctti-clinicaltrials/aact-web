@@ -1,6 +1,6 @@
 import { useRouteError } from "react-router-dom";
 import Footer from "./Footer";
-import Header2 from "./Header2";
+import Navbar from "./Navbar";
 
 export default function NotFoundPage() {
   const error = useRouteError();
@@ -8,7 +8,7 @@ export default function NotFoundPage() {
 
   return (
     <>
-    <Header2/>
+    <Navbar/>
     <div className="text-center">
       <h1>Oops!</h1>
       <p>Sorry, the page you were looking for could not be found..</p>

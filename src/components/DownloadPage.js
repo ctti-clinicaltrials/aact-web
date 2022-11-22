@@ -8,7 +8,7 @@ export default function DonwloadPage() {
         <h1>Download AACT</h1>
         <p>
           A static copy of the AACT database is created on the first of each
-          month. The most recent and archived <a href="/snapshots">copies</a>
+          month. The most recent and archived <a href="/snapshots">copies</a>{" "}
           are available for download. These can be used to create a local copy
           of a particular instance of the database. A number of query and
           analytic tools (such as SAS, pgAdmin & R) can then be used to connect
@@ -16,7 +16,7 @@ export default function DonwloadPage() {
         </p>
         <p>
           For those who prefer to access the data via simple flat files, static
-          copies are also available as a
+          copies are also available as a{" "} 
           <a href="/pipe_files">zipped package of pipe-delimited files</a>.
         </p>
       </div>

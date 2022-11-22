@@ -1,20 +1,15 @@
-import { Link, Outlet } from 'react-router-dom';
-import ConnectPage from '../components/ConnectPage';
-import Footer from '../components/Footer';
-import Header from '../components/Header';
-import Header2 from '../components/Header2';
-import HomePage from '../components/HomePage'
-import image from '../images/full_logo.jpg'
-
+import { Outlet } from "react-router-dom";
+import Footer from "../components/Footer";
+import Navbar from "../components/Navbar";
 
 export default function Root() {
   return (
     <div>
-      <Header2/>
-      <div className='d-flex flex-column min-vh-100 container'>
-      <Outlet/>
+      <Navbar />
+      <div className="d-flex flex-column min-vh-100 container">
+        <Outlet />
       </div>
-      <Footer/>
+      <Footer />
     </div>
   );
 }
