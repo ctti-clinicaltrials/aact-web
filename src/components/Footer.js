@@ -4,7 +4,7 @@ export default function Footer() {
   return (
     <footer className="py-3 my-4 bg-light">
     <ul className="nav justify-content-around border-bottom pb-3 mb-3">
-      <li className="nav-item"><a href="https://ctti-clinicaltrials.org/" target={"blank"} className="nav-link px-2 text-muted">CCTI</a></li>
+      <li className="nav-item"><a href="https://ctti-clinicaltrials.org/" target={"blank"} className="nav-link px-2 text-muted">CTTI</a></li>
       <li className="nav-item"><a href="https://ctti-clinicaltrials.org/our-work/quality/state-of-clinical-trials/" target={"blank"} className="nav-link px-2 text-muted">STATE OF CLINICAL TRIALS PROJECT</a></li>
       <li className="nav-item"><a href="#" className="nav-link px-2 text-muted">GUIDE FOR RESEARCHERS</a></li>
       <li className="nav-item"><a href="#" className="nav-link px-2 text-muted">CONTACT US</a></li>
