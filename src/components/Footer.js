@@ -10,7 +10,7 @@ export default function Footer() {
             target={"blank"}
             className="nav-link text-muted"
           >
-            <small>CCTI</small>
+            <small>CTTI</small>
           </a>
         </li>
         <li className="nav-item">
