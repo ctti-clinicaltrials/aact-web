@@ -81,3 +81,7 @@ color: #26657a ;
     font-weight: 400;
     fill: #FFF;
   }
+
+  .text-black {
+    color: black !important;
+    }

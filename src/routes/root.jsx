@@ -1,5 +1,6 @@
-import { Link } from 'react-router-dom';
+import { Link, Outlet } from 'react-router-dom';
 import ConnectPage from '../components/ConnectPage';
+import Footer from '../components/Footer';
 import Header from '../components/Header';
 import Header2 from '../components/Header2';
 import HomePage from '../components/HomePage'
@@ -8,13 +9,12 @@ import image from '../images/full_logo.jpg'
 
 export default function Root() {
   return (
-    <div className="App container">
-      <Link to={`test_route_name`}></Link>
-      <Header/>
-      {/* <Header2/> */}
-      
-      <ConnectPage/>
-      {/* <HomePage /> */}
+    <div>
+      <Header2/>
+      <div className='d-flex flex-column min-vh-100 container'>
+      <Outlet/>
+      </div>
+      <Footer/>
     </div>
   );
 }

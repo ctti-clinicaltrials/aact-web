@@ -4,7 +4,7 @@ import image from "../images/full_logo.jpg";
 
 export default function Header2() {
   return (
-    <nav className="navbar bg-light fixed-top">
+    <nav className="navbar sticky-top bg-white">
         <div className="container-fluid">
           <a
             className="navbar-brand"
@@ -23,7 +23,7 @@ export default function Header2() {
           </button>
           <div
             className="offcanvas offcanvas-end"
-            tabindex="-1"
+            tabIndex="-1"
             id="offcanvasNavbar"
             aria-labelledby="offcanvasNavbarLabel"
           >
@@ -41,32 +41,32 @@ export default function Header2() {
             <div className="offcanvas-body">
               <ul className="navbar-nav justify-content-end flex-grow-1 pe-3">
                 <li className="nav-item">
-                  <a className="nav-link active" aria-current="page" href="#">
+                  <a className="nav-link active" aria-current="page" href="/">
                     Home
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="#">
+                  <a className="nav-link" href="connect">
                     Connect
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="#">
+                  <a className="nav-link" href="download">
                     Download
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="#">
+                  <a className="nav-link" href="learn">
                     Learn
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="#">
+                  <a className="nav-link" href="shared_data">
                     Shared Data
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="#">
+                  <a className="nav-link" href="contactus">
                     Contact Us
                   </a>
                 </li>
