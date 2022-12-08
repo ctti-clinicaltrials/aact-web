@@ -7,6 +7,7 @@ import NotFoundPage from "./components/NotFoundPage";
 import ConnectPage from "./components/ConnectPage";
 import HomePage from "./components/HomePage";
 import DownloadPage from "./components/DownloadPage";
+import ContactUsPage from "./components/ContactUsPage";
 
 const router = createBrowserRouter([
   {
@@ -25,6 +26,10 @@ const router = createBrowserRouter([
       {
         path: "download",
         element: <DownloadPage />,
+      },
+      {
+        path: "contact-us",
+        element: <ContactUsPage />,
       },
     ],
   },
