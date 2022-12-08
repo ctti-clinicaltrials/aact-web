@@ -41,10 +41,57 @@ export default function Navbar() {
                   Home
                 </a>
               </li>
-              <li className="nav-item">
-                <a className="nav-link" href="connect">
-                  Connect
-                </a>
+              <li>
+                <div className="nav-item" id="connectAccordion">
+                  <div className="accordion-item">
+                    <div className="accordion-header" id="learnHeading">
+                      <a
+                        className="nav-item collapsed nav-link"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#connectAccordionCollapseOne"
+                        aria-expanded="false"
+                        aria-controls="connectAccordionCollapseOne"
+                      >
+                        Connect to AACT
+                      </a>
+                      <div
+                        id="connectAccordionCollapseOne"
+                        class="accordion-collapse collapse"
+                        aria-labelledby="learnHeading"
+                        data-bs-parent="#connectAccordion"
+                      >
+                        <div class="accordion-body mx-4">
+                          <li>
+                            <a className="nav-link" href="#">
+                              Web Interface
+                            </a>
+                          </li>
+                          <li>
+                            <a className="nav-link" href="#">
+                              pgAdmin
+                            </a>
+                          </li>
+                          <li>
+                            <a className="nav-link" href="#">
+                              R and RStudio
+                            </a>
+                          </li>
+                          <li>
+                            <a className="nav-link" href="#">
+                              SAS
+                            </a>
+                          </li>
+                          <li>
+                            <a className="nav-link" href="#">
+                              pSQL
+                            </a>
+                          </li>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </li>
               <li className="nav-item">
                 <a className="nav-link" href="download">
@@ -59,14 +106,14 @@ export default function Navbar() {
                         className="nav-item collapsed nav-link"
                         type="button"
                         data-bs-toggle="collapse"
-                        data-bs-target="#collapseOne"
+                        data-bs-target="#learnAccordionCollapseOne"
                         aria-expanded="false"
-                        aria-controls="collapseOne"
+                        aria-controls="learnAccordionCollapseOne"
                       >
                         Learn More About AACT
                       </a>
                       <div
-                        id="collapseOne"
+                        id="learnAccordionCollapseOne"
                         class="accordion-collapse collapse"
                         aria-labelledby="learnHeading"
                         data-bs-parent="#learnAccordion"

@@ -4,7 +4,6 @@ import { createBrowserRouter, RouterProvider, Route } from "react-router-dom";
 import Root from "./routes/root";
 import "./App.css";
 import NotFoundPage from "./components/NotFoundPage";
-import ConnectPage from "./components/ConnectPage";
 import HomePage from "./components/HomePage";
 import DownloadPage from "./components/DownloadPage";
 
@@ -17,10 +16,6 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <HomePage />,
-      },
-      {
-        path: "connect",
-        element: <ConnectPage />,
       },
       {
         path: "download",

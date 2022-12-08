@@ -20,20 +20,20 @@ export default function DonwloadPage() {
           <a href="/pipe_files">zipped package of pipe-delimited files</a>.
         </p>
       </div>
-      <div className="accordion" id="accordionExample">
+      <div className="accordion" id="downloadAccordion">
         <div className="accordion-item">
           <div className="accordion-header" id="headingOne">
             <button
               className="accordion-button collapsed bg-light"
               type="button"
               data-bs-toggle="collapse"
-              data-bs-target="#collapseOne"
+              data-bs-target="#downloadAccordionCollapseOne"
               aria-expanded="false"
-              aria-controls="collapseOne"
+              aria-controls="downloadAccordionCollapseOne"
             >
               <div className="text-center w-100">
                 <h3>Static Copy of the Database</h3>
-                <div>
+                <div className="text-black">
                   <div>
                     <small>
                       Click here for access to these static copies as well as
@@ -50,10 +50,10 @@ export default function DonwloadPage() {
             </button>
           </div>
           <div
-            id="collapseOne"
+            id="downloadAccordionCollapseOne"
             className="accordion-collapse collapse "
             aria-labelledby="headingOne"
-            data-bs-parent="#accordionExample"
+            data-bs-parent="#downloadAccordion"
           >
             <div className="accordion-body">
               <DownloadAccordionItem />
@@ -72,7 +72,7 @@ export default function DonwloadPage() {
             >
               <div className="text-center w-100">
                 <h3>Pipe-Delimited Files</h3>
-                <div>
+                <div className="text-black">
                   <small>
                     Click here to download a pipe delimited copy of the
                     database. These pipe delimited files are compatible with
@@ -86,7 +86,7 @@ export default function DonwloadPage() {
             id="collapseTwo"
             className="accordion-collapse collapse bg-light"
             aria-labelledby="headingTwo"
-            data-bs-parent="#accordionExample"
+            data-bs-parent="#downloadAccordion"
           >
             <div className="accordion-body">
               <DownloadAccordionItem />
@@ -105,7 +105,7 @@ export default function DonwloadPage() {
             >
               <div className="text-center w-100">
                 <h3>Covid-19 Files</h3>
-                <div>
+                <div className="text-black">
                   <small>
                     Click here to download spreadsheets for covid-19 studies.
                   </small>
@@ -117,7 +117,7 @@ export default function DonwloadPage() {
             id="collapseThree"
             className="accordion-collapse collapse"
             aria-labelledby="headingThree"
-            data-bs-parent="#accordionExample"
+            data-bs-parent="#downloadAccordion"
           >
             <div className="accordion-body">
               <DownloadAccordionItem />

@@ -91,6 +91,16 @@ export default function HomePage() {
           </div>
         </a>
       </div>
+      <p>
+        As a cloud-hosted PostgreSQL database, AACT can be directly accessed via
+        standard query & analytic tools. Several popular tools, such as pgAdmin
+        and RStudio, are free and relatively easy to install and configure.
+        Other proprietary tools are popular and provide powerful analytic and/or
+        relational database utility; these tools include SAS, Toad, and Tableau.
+        In many cases, access is a matter of installing the software package,
+        configuring it to use PostgreSQL, and providing AACT connection
+        credentials.
+      </p>
     </div>
   );
 }
