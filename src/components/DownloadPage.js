@@ -1,7 +1,12 @@
 import React from "react";
+import {
+  useLoaderData,
+} from "react-router-dom";
 import DownloadAccordionItem from "./DownloadAccordionItem";
 
 export default function DonwloadPage() {
+  const data = useLoaderData();
+  if (data )console.log(data)
   return (
     <div>
       <div>
