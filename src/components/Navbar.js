@@ -57,36 +57,36 @@ export default function Navbar() {
                       </a>
                       <div
                         id="connectAccordionCollapseOne"
-                        class="accordion-collapse collapse"
+                        className="accordion-collapse collapse"
                         aria-labelledby="learnHeading"
                         data-bs-parent="#connectAccordion"
                       >
-                        <div class="accordion-body mx-4">
-                          <li>
+                        <div className="accordion-body mx-4">
+                          <div>
                             <a className="nav-link" href="#">
                               Web Interface
                             </a>
-                          </li>
-                          <li>
+                          </div>
+                          <div>
                             <a className="nav-link" href="#">
                               pgAdmin
                             </a>
-                          </li>
-                          <li>
+                          </div>
+                          <div>
                             <a className="nav-link" href="#">
                               R and RStudio
                             </a>
-                          </li>
-                          <li>
+                          </div>
+                          <div>
                             <a className="nav-link" href="#">
                               SAS
                             </a>
-                          </li>
-                          <li>
+                          </div>
+                          <div>
                             <a className="nav-link" href="#">
                               pSQL
                             </a>
-                          </li>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -114,36 +114,36 @@ export default function Navbar() {
                       </a>
                       <div
                         id="learnAccordionCollapseOne"
-                        class="accordion-collapse collapse"
+                        className="accordion-collapse collapse"
                         aria-labelledby="learnHeading"
                         data-bs-parent="#learnAccordion"
                       >
-                        <div class="accordion-body mx-4">
-                          <li>
+                        <div className="accordion-body mx-4">
+                          <div>
                             <a className="nav-link" href="#">
                               Database Schema
                             </a>
-                          </li>
-                          <li>
+                          </div>
+                          <div>
                             <a className="nav-link" href="#">
                               Data Dcitionary
                             </a>
-                          </li>
-                          <li>
+                          </div>
+                          <div>
                             <a className="nav-link" href="#">
                               Database Update Schedule
                             </a>
-                          </li>
-                          <li>
+                          </div>
+                          <div>
                             <a className="nav-link" href="#">
                               Release Notes
                             </a>
-                          </li>
-                          <li>
+                          </div>
+                          <div>
                             <a className="nav-link" href="#">
                               AACT Before November 15, 2021
                             </a>
-                          </li>
+                          </div>
                         </div>
                       </div>
                     </div>
