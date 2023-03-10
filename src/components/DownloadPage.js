@@ -6,7 +6,13 @@ import DownloadAccordionItem from "./DownloadAccordionItem";
 
 export default function DonwloadPage() {
   const data = useLoaderData();
-  if (data )console.log(data)
+
+
+  // Sort the data before passing it to the DowbloadAccordionItem
+  const snapshotFiles = data.file_records.filter((file) => file.file_type === 'snapshot').sort((a, b) => b.id - a.id)
+  const pipeFiles = data.file_records.filter((file) => file.file_type === 'pipefiles').sort()
+  const covidFiles = data.file_records.filter((file) => file.file_type === 'covid-19').sort()
+
   return (
     <div>
       <div>
@@ -61,7 +67,7 @@ export default function DonwloadPage() {
             data-bs-parent="#downloadAccordion"
           >
             <div className="accordion-body">
-              <DownloadAccordionItem />
+              <DownloadAccordionItem files={snapshotFiles}/>
             </div>
           </div>
         </div>
@@ -94,7 +100,7 @@ export default function DonwloadPage() {
             data-bs-parent="#downloadAccordion"
           >
             <div className="accordion-body">
-              <DownloadAccordionItem />
+              <DownloadAccordionItem files={pipeFiles}/>
             </div>
           </div>
         </div>
@@ -125,7 +131,7 @@ export default function DonwloadPage() {
             data-bs-parent="#downloadAccordion"
           >
             <div className="accordion-body">
-              <DownloadAccordionItem />
+              <DownloadAccordionItem files={covidFiles}/>
             </div>
           </div>
         </div>
