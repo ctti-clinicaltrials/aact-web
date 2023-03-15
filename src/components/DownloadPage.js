@@ -9,9 +9,11 @@ export default function DonwloadPage() {
 
 
   // Sort the data before passing it to the DowbloadAccordionItem
-  const snapshotFiles = data.file_records.filter((file) => file.file_type === 'snapshot').sort((a, b) => b.id - a.id)
-  const pipeFiles = data.file_records.filter((file) => file.file_type === 'pipefiles').sort()
-  const covidFiles = data.file_records.filter((file) => file.file_type === 'covid-19').sort()
+  const snapshotFiles = data.file_records.filter((file) => file.file_type === 'snapshot').sort((a, b) => new Date(b.created_at) - new Date(a.created_at))
+  const pipeFiles = data.file_records.filter((file) => file.file_type === 'pipefiles').sort((a, b) => new Date(b.created_at) - new Date(a.created_at))
+  const covidFiles = data.file_records.filter((file) => file.file_type === 'covid-19').sort((a, b) => new Date(b.created_at) - new Date(a.created_at))
+
+console.log(snapshotFiles);
 
   return (
     <div>

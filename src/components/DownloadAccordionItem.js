@@ -1,34 +1,37 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import DownloadLink from "react-download-link";
+import useGetDate from "../hooks/useGetDate";
+import useGetFileSize from "../hooks/useGetFileSize";
 
 export default function DownloadAccordionItem(files) {
-
-  const hadnleChange = (e) => {
+  const handleChange = (e) => {
     window.location = e.target.value;
     console.log(e.target.value);
   };
 
-
-  const getDate = (time) => {
-    const date = new Date(time)
-    return date.toLocaleDateString('en-US')
-  }
+  const GetFileSize = (size) => {
+      return useGetFileSize(size)
+    }
+  
+  const GetDate = (timestamp) => {
+   return useGetDate(timestamp)
+  };
 
   return (
     <div className="card-body d-flex justify-content-around">
       <div className="col-4">
         <h4>Current Month's Daily Static Copies</h4>
         <select
-          className="form-select"
+          className="form-select d-flex"
           aria-label="Default select example"
-          onChange={hadnleChange}
+          onChange={handleChange}
         >
-          <option defaultValue>Select file to download</option>
+          <option defaultValue className="justify-content-center">
+            Select file to download
+          </option>
           {files.files.map((file) => {
             return (
-              <option key={file.id} value={file.url}>
-                {getDate(file.created_at)}
+              <option key={file.id} value={file.url} className="mx-auto">
+                {GetDate(file.created_at)} {GetFileSize(file.file_size)}
               </option>
             );
           })}
