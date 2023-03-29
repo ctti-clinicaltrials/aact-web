@@ -1,7 +1,22 @@
 import React from "react";
+import { useLoaderData } from "react-router-dom";
 import DownloadAccordionItem from "./DownloadAccordionItem";
 
-export default function DonwloadPage() {
+export default function DownloadPage() {
+  const data = useLoaderData();
+
+  const snapshotFiles = data.file_records
+    .filter((file) => file.file_type === "snapshot")
+    .sort((a, b) => new Date(b.created_at) - new Date(a.created_at));
+  const pipeFiles = data.file_records
+    .filter((file) => file.file_type === "pipefiles")
+    .sort((a, b) => new Date(b.created_at) - new Date(a.created_at));
+  const covidFiles = data.file_records
+    .filter((file) => file.file_type === "covid-19")
+    .sort((a, b) => new Date(b.created_at) - new Date(a.created_at));
+
+  console.log(snapshotFiles);
+
   return (
     <div>
       <div>
@@ -16,7 +31,7 @@ export default function DonwloadPage() {
         </p>
         <p>
           For those who prefer to access the data via simple flat files, static
-          copies are also available as a{" "} 
+          copies are also available as a{" "}
           <a href="/pipe_files">zipped package of pipe-delimited files</a>.
         </p>
       </div>
@@ -56,7 +71,7 @@ export default function DonwloadPage() {
             data-bs-parent="#downloadAccordion"
           >
             <div className="accordion-body">
-              <DownloadAccordionItem />
+              <DownloadAccordionItem files={snapshotFiles} />
             </div>
           </div>
         </div>
@@ -89,7 +104,7 @@ export default function DonwloadPage() {
             data-bs-parent="#downloadAccordion"
           >
             <div className="accordion-body">
-              <DownloadAccordionItem />
+              <DownloadAccordionItem files={pipeFiles} />
             </div>
           </div>
         </div>
@@ -120,7 +135,7 @@ export default function DonwloadPage() {
             data-bs-parent="#downloadAccordion"
           >
             <div className="accordion-body">
-              <DownloadAccordionItem />
+              <DownloadAccordionItem files={covidFiles} />
             </div>
           </div>
         </div>

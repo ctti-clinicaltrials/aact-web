@@ -8,6 +8,16 @@ import HomePage from "./components/HomePage";
 import DownloadPage from "./components/DownloadPage";
 import ContactUsPage from "./components/ContactUsPage";
 
+export const fileLoader = async () => {
+
+  const result = await fetch('http://localhost:3000/file_records');
+
+  if (!result.ok) throw Error('Something went wrong');
+
+  const file_records = await result.json()
+  return {file_records}
+}
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -20,6 +30,7 @@ const router = createBrowserRouter([
       },
       {
         path: "download",
+        loader: fileLoader,
         element: <DownloadPage />,
       },
       {

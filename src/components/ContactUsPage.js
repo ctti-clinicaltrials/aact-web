@@ -6,7 +6,7 @@ export default function ContactUsPage() {
       <h1>Contact Us</h1>
       <h4>Form to submit Issues/Requests</h4>
       <iframe
-        class="airtable-embed"
+        className="airtable-embed"
         src="https://airtable.com/embed/shrsjLUxT5X7Sabi4?backgroundColor=orange"
         frameborder="0"
         onmousewheel=""
@@ -26,7 +26,7 @@ export default function ContactUsPage() {
         directly <a href="https://ctti-clinicaltrials.org/contact-us/">here</a>.
       </p>
       <iframe
-        class="airtable-embed"
+        className="airtable-embed"
         src="https://airtable.com/embed/shrmhjOdSzZ9WLqd6?backgroundColor=orange&viewControls=on"
         frameborder="0"
         onmousewheel=""
